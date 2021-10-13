@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/*
+    color: $violet: hsl(257, 40%, 49%);
+    color: $soft-magenta: hsl(300, 69%, 71%);
+*/
+body {
+    background: hsl(257, 40%, 49%);
+    color: white;
+    box-sizing: border-box;
+    background-image: url("/images/bg-desktop.svg");
+}
+.logo {
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 20%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;  
+}
+.photos {
+    margin-left: 70px;
+}
+img {
+    width: 90%;
+}
+.text {
+    margin-top: 40px;
+    margin-left: 0px;
+    padding: 0;
+    width: 40%;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 70%;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    border: none;
+    background: white;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 375px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0%; 
+        padding: 0%;
+        align-items: center; 
+    }
+    .logo {
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 30%;
+    }
+    .photos {
+        margin: 10px;
+    }
+    img {
+        width: 100%;
+    }
+    .text {
+        width: 100%;
+    }
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        width: 100%;
+        margin: 10px;
+        font-size: 24px;
+        text-align: center;
+    }
+    p {
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    
+    .buttons {
+        text-align: center;
+    }
+}
